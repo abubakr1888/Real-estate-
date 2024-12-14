@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    max-width: 1200px;
+    margin: auto;
+}
+
+.full-screen-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background: linear-gradient(135deg, #df5454, #5ea0a0);
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.full-screen-content {
+    max-width: 800px; 
+}
+
+.main-heading {
+    font-size: 3rem; 
+    margin: 0;
+    font-weight: bold; 
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.fixed-header .logo-name {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.fixed-header .navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-header .navbar li {
+    margin: 0;
+}
+
+.fixed-header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.fixed-header .navbar a:hover {
+    background-color: #fff;
+    color: #3a2d2d;
+}
+
+.main-header-content {
+    text-align: center;
+}
+
+.main-header .logo-name {
+    font-size: 3rem;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-name {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+    position: relative; /* Для выпадающего меню */
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-item a:hover {
+    color: #ccc;
+}
+
+/* Стили для выпадающего меню */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Отображать выпадающее меню под логотипом */
+    left: -50px; /* Смещаем влево относительно логотипа */
+    background-color: #817979;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Отображаем поверх других элементов */
+}
+
+.dropdown-menu li {
+    margin-bottom: 10px;
+    border-bottom: solid 1px #fff;
+}
+
+.dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    width: 120px;
+    text-align: center;
+}
+
+/* Корректировка z-index для навбара и выпадающего меню */
+.header, .dropdown-menu {
+    z-index: 999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #3a2d2d; /* Темный фон для футера */
+    color: #fff; /* Белый текст */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Тень для футера */
+    font-family: Arial, sans-serif;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between; /* Выравниваем элементы футера */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    max-width: 1200px;
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.callback a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.callback a:hover {
+    border-bottom: 2px solid #817979; /* Подсветка ссылки при наведении */
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.date {
+    font-size: 1rem;
+    opacity: 0.7; /* Полупрозрачность для даты */
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column; /* Вертикальная компоновка для маленьких экранов */
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .callback a {
+        font-size: 1rem;
+    }
+
+    .footer-text, .date {
+        font-size: 0.9rem;
+    }
+}

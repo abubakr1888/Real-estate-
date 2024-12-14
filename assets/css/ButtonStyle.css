@@ -1,0 +1,25 @@
+.btn-primary {
+    background-color: #68dad8;
+    border: none; 
+    color: #fff;
+    font-size: 1.2rem; 
+    padding: 7px 15px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.btn-primary:hover {
+    background-color: #0d00ff; 
+    transform: scale(1.05); 
+}
+
+.btn-primary:active {
+    background-color: #0d00ff; 
+    transform: scale(0.17); 
+}
+
+.btn-primary:focus {
+    outline: none; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
